@@ -1,0 +1,9 @@
+<a href="/">Home</a> <a href="/history/">Most recent</a>
+
+<form action="" method="post">
+  {% csrf_token %} {{ form.as_p }}
+  <input type="submit" value="Submit" />
+</form>
+{%if cow%}
+<pre>{{cow}}</pre>
+{%endif%}
